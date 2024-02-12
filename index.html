@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PatilKaki Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <style>
+      #hero {
+    position: relative;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /* Adjust to align texts horizontally */
+}
+
+.hero-row {
+    display: flex;
+}
+
+.text-column {
+    text-align: center; /* Center text in each column */
+    margin-right: 20px; /* Adjust margin for spacing between columns */
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* Animation for fade-in effect */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.section-heading {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.hero-text {
+    font-size: 1.5em;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.yellow-text {
+    color: #FDCB58;
+}
+
+.white-text {
+    color: #FFFFFF;
+}
+
+#hero:hover .section-heading,
+#hero:hover .hero-text {
+    font-size: 1.8em;
+}
+
+img {
+    max-width: 100%;
+    margin-top: 20px; /* Adjust margin for spacing */
+}
+
+       #form {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #001F3F; /* Midnight Blue background color for the form */
+            padding: 20px;
+            box-sizing: border-box;
+            color: #FFFFFF; /* White font color for the form */
+            transition: transform 0.5s ease-in-out;
+        }
+
+        #form.show {
+            transform: translateY(0);
+        }
+
+        #form label, #form input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #form input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        #form button {
+            background-color: var(--royal-yellow); /* Yellow button color for the form */
+            color: #001F3F; /* Midnight Blue font color for the form button */
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+       body {
+            font-family: 'General Sans', sans-serif;
+        }
+
+        h1, h2, h3, p, label {
+            font-family: 'General Sans', sans-serif;
+        }
+
+        /* Color Palette */
+        :root {
+            --sage-green: #2E3A23;
+            --royal-yellow: #FDCB58;
+            --grey: #808080;
+        }
+        main {
+    margin: 10px 20px; /* Adjust the margin as needed */
+}
+
+        /* Additional Styling */
+        body {
+            background-color: #001F3F; /* Midnight Blue background color */
+            color: #FFFFFF; /* White font color */
+            margin: 0;
+            margin-right: 20px;
+            padding: 0;
+        }
+
+        h1, h2, h3, p, label {
+            color: #FFFFFF; /* White font color */
+        }
+
+        .cta-button {
+            background-color: var(--royal-yellow); /* Yellow button color */
+            color: #001F3F; /* Midnight Blue font color */
+        }
+
+        /* Countdown Timer Styling */
+        #countdown {
+            background-color: #001F3F; /* Midnight Blue background color for the countdown section */
+        }
+
+        #timer, #progress-bar {
+            color: #FFFFFF; /* White font color for timer */
+        }
+
+        #progress-bar {
+            height: 10px; /* Adjust the height of the progress bar */
+            background-color: var(--royal-yellow); /* Yellow color for the progress bar */
+        }
+
+       /* Navigation Bar Styling */
+header {
+    background: url('path/to/your/header-image.jpg') no-repeat center;
+    background-size: contain;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for smoother hover effect */
+    margin: 0 10px; /* Add margin between buttons */
+}
+
+nav a:hover {
+    background-color: var(--royal-yellow);
+    color: #001F3F;
+}
+
+/* Additional Styling */
+.header-with-logo {
+    background: url('pk.png') no-repeat center;
+    background-size: 300px 100px;
+    padding: 20px; /* Add padding as needed */
+    text-align: center;
+}
+
+.header-with-logo nav {
+    margin-top: -30px;
+}
+
+/* Your existing styles */
+/* Additional Styling */
+.about-section {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    color: #FDCB58; /* Royal Yellow color for the heading */
+}
+
+.about-content {
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.passion-section,
+.business-section,
+.supercharge-section {
+    margin-top: 30px;
+}
+
+h3 {
+    color: #FDCB58; /* Sage Green color for subheadings */
+}
+
+/* Your existing styles */
+/* Additional Styling */
+.icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 800px; /* Adjust as needed */
+    margin: 20px auto;
+}
+
+.icon {
+    text-align: center;
+    width: 30%; /* Adjust the width to control the number of icons per row */
+    margin-bottom: 20px; /* Adjust the spacing between rows */
+}
+
+.icon img {
+    width: 120px; /* Adjust the size of the icons */
+    height: 120px;
+}
+/* Additional Styling */
+.section-heading {
+    color: #FDCB58; /* Royal Yellow color for the heading */
+    font-size: 2em; /* Adjust the font size as needed */
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Add spacing below the heading */
+}
+/* Additional Styling */
+.timer-container {
+    text-align: center;
+    font-size: 5em;
+    color: #FDCB58; /* Royal Yellow color for the timer */
+    margin-bottom: 20px; /* Add spacing below the timer */
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: var(--royal-yellow); /* Yellow color for the progress bar */
+    width: 100%; /* Initially set to full width */
+    transition: width 0.5s ease; /* Smooth transition effect */
+}
+
+/* Hover Effect for Timer Container */
+.timer-container:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background on hover */
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+#form1 {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 40%;
+      background-color: #001F3F; /* Midnight Blue background color for the form */
+      padding: 20px;
+      box-sizing: border-box;
+      color: #FFFFFF; /* White font color for the form */
+      transition: transform 0.5s ease-in-out,opacity 0.5s ease-in-out;
+    }
+
+    #form1.show {
+      transform: translateY(0);
+      display: block;
+      opacity: 1;
+    }
+
+    #form1 label,
+    #form1 input {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    #form1 input {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    #form1 button {
+      background-color: #FDCB58; /* Royal Yellow button color for the form */
+      color: #001F3F; /* Midnight Blue font color for the form button */
+      padding: 10px 15px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    #cta {
+    color: #001F3F; /* Set the text color */
+    padding: 40px;
+    text-align: center;
+}
+
+#ctaButton {
+    background-color: #001F3F; /* Set the button color */
+    color: #FDCB58; /* Set the button text color */
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for smoother hover effect */
+}
+
+#ctaButton:hover {
+    background-color: #FDCB58; /* Change button color on hover */
+    color: #001F3F; /* Change button text color on hover */
+}
+
+</style>
+</head>
+<body>
+<!-- Header with Navigation Links -->
+<header class="header-with-logo">
+    <h1 style="color:#001F3F;">/</h1>
+    <br>
+    <h1 style="color:#001F3F;">.</h1>
+   
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#about-founder">About Founder</a>
+        <a href="#why-choose">Why Choose</a>
+        <a href="#countdown">Countdown</a>
+        <a href="#cta">Call to Action</a>
+    </nav>
+</header><main>
+<!-- Hero Section -->
+<section id="hero">
+    <div class="hero-content">
+        <div class="hero-row">
+            <div class="text-column">
+                <h1 class="section-heading yellow-text">Unleash Your Business Potential</h1>
+                <p class="hero-text white-text">Join Darsheel Savla on a journey of innovation and growth</p>
+            </div>
+            <div class="text-column">
+                <p class="hero-text white-text">Transform your passion into a thriving business</p>
+                <p class="hero-text yellow-text">Discover the art of culinary excellence</p>
+            </div>
+        </div>
+        <img src="pngt.png" alt="Darsheel Savla - Founder">
+    </div>
+</section>
+
+
+
+<!-- About Founder Section -->
+<section id="about-founder">
+    <div class="founder-content">
+        <h1 class="section-heading">About Darsheel Savla</h2>
+        <div class="about-section">
+            <h2>Meet Darsheel Savla: Visionary Culinary Leader</h2>
+        
+            <div class="about-content">
+                <p>
+                    Darsheel Savla, a visionary leader and co-founder at PatilKaki, is on a mission to revolutionize the culinary landscape. Infused with an unwavering drive and a profound passion for food, people, and brand building, Darsheel brings a unique blend of creativity and expertise to the table.
+                </p>
+        
+                <div class="passion-section">
+                    <h3>Passion for Culinary Exploration</h3>
+                    <p>
+                        Darsheel's culinary journey is fueled by an insatiable appetite for exploration. With an innate ability to blend tradition with innovation, he is dedicated to uncovering and sharing the rich tapestry of flavors that PatilKaki has to offer.
+                    </p>
+                </div>
+        
+                <div class="business-section">
+                    <h3>Building D2C Empires</h3>
+                    <p>
+                        As a fervent advocate for Direct-to-Consumer (D2C) businesses, Darsheel is not only a maestro in the kitchen but also a seasoned entrepreneur. His visionary leadership extends to rolling out a new consultancy program, aimed at guiding fellow founders and entrepreneurs through the intricacies of going Direct-2-Consumer.
+                    </p>
+                </div>
+        
+                <div class="supercharge-section">
+                    <h3>Supercharge Your Journey</h3>
+                    <p>
+                        Join Darsheel in this transformative journey to gain exclusive insights into industry secrets. Learn how to supercharge your learning and growth, not just in the culinary realm but across various domains. Together, let's elevate the way you approach food, business, and life!
+                    </p>
+                </div>
+            </div>
+        </div>
+         
+    </div>
+</section>
+<h1></h1><h1></h1>
+<!-- Why Choose Section -->
+<section id="why-choose">
+    <div class="choose-content">
+        <h2 class="section-heading">Why Choose Darsheel's Services?</h2>
+        <div class="icon-container">
+            <div class="icon"><img src="experts.png" alt="Icon 1"><p>Expert Guidance</p></div>
+            <div class="icon"><img src="solution.png" alt="Icon 2"><p>Creative Solutions</p></div>
+            <div class="icon"><img src="strategic-planning.png" alt="Icon 3"><p>Strategic Approach</p></div>
+            <div class="icon"><img src="marketing-strategy.png" alt="Icon 4"><p>Personalized Solutions</p></div>
+            <div class="icon"><img src="idea.png" alt="Icon 5"><p>Innovative Strategies</p></div>
+            <div class="icon"><img src="research.png" alt="Icon 6"><p>Result-Driven Approach</p></div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Countdown Timer Section -->
+<section id="countdown">
+    <div class="countdown-content">
+        <h2 class="section-heading">Time is running out. Grab your spot now.</h2>
+        <h2 class="section-heading">The deal ends in...</h2>
+<h1 style="color:#001F3F;">.</h1><h1 style="color:#001F3F;">.</h1><h1 style="color:#001F3F;"></h1><h1 style="color:#001F3F;"></h1><h1></h1>
+        <div id="timer" class="timer-container bigger-timer"></div>
+        <div id="progress-bar" class="progress-bar"></div> <!-- Progress bar code here -->
+    </div>
+</section>
+ <!-- CTA Section -->
+<section id="cta">
+    <div class="cta-content">
+        <h2 class="section-heading">Ready to Take the Next Step?</h2>
+        <p>Join us now and unlock a world of possibilities!</p>
+        <button id="ctaButton" onclick="showForm()">Get Started</button>
+    </div>
+</section>
+
+
+
+<div id="form1">
+    <button class="close-button" style="position: relative;left: 90%;" onclick="closeForm()">X</button>
+
+    <label for="phone">Phone:</label>
+
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <button type="submit">Submit</button>
+  </div>
+
+ 
+
+
+
+
+
+</main>
+<!-- JavaScript for Countdown Timer -->
+<script src="script.js"></script>
+
+</body>
+</html>
