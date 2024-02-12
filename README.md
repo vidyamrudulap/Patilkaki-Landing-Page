@@ -1,27 +1,27 @@
 # Patilkaki-Landing-Page
 ## Features:
-###1) Hero Section:
+### 1) Hero Section:
 
 Eye-catching hero section with a compelling catchphrase.
 Smooth transition effect on hover.
 Four dynamic texts with alternating yellow and white colors.
-###2) About Founder Section:
+### 2) About Founder Section:
 
 Introduction to Darsheel Savla, the visionary founder.
 Inclusion of a stock image for visual appeal.
-3) "Why should You go ahead with Me?" Section:
+### 3) "Why should You go ahead with Me?" Section:
 
 Section featuring dummy icons explaining the reasons to choose Darsheel’s services.
 Visual and cohesive design.
-4) Countdown Timer Section:
+### 4) Countdown Timer Section:
 
 Timer counting down from 10 minutes, signaling urgency.
 Progress bar indicating the time remaining.
-5) Call to Action Section:
+### 5) Call to Action Section:
 
 Encourages users to take action.
 Button triggering a form to slide up after 15 seconds.
-6) Slide-Up Form:
+### 6) Slide-Up Form:
 
 Form sliding up smoothly from the bottom after 15 seconds.
 Requests the user's phone number and email address.
