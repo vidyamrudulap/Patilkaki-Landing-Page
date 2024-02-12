@@ -33,7 +33,7 @@ To view the PatilKaki Landing Page locally, follow these steps:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/patilkaki-landing-page.git
+   git clone https://github.com/vidyamrudulap/patilkaki-landing-page.git
 2. **Navigate to the Project Directory:**
     ```bash
    cd patilkaki-landing-page
