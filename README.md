@@ -1,11 +1,11 @@
 # Patilkaki-Landing-Page
 ## Features:
-1) Hero Section:
+###1) Hero Section:
 
 Eye-catching hero section with a compelling catchphrase.
 Smooth transition effect on hover.
 Four dynamic texts with alternating yellow and white colors.
-2) About Founder Section:
+###2) About Founder Section:
 
 Introduction to Darsheel Savla, the visionary founder.
 Inclusion of a stock image for visual appeal.
